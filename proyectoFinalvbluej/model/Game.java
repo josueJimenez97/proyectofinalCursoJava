@@ -4,14 +4,9 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Game implements UnoGame {
-    private static final Color[] COLORS={Color.BLUE,Color.RED,Color.YELLOW,Color.GREEN};
-    private ArrayList<UnoCard> cards;
+    
     public Game(){
-        cards= new ArrayList<>();
-        for(int i=0;i<5;i++){
-            int rd= (int)(Math.random()*4);
-            cards.add(new Card(COLORS[rd],(char) i));
-        }
+       
     }
     @Override
     public Player whoWin() {
@@ -20,28 +15,22 @@ public class Game implements UnoGame {
 
     @Override
     public ArrayList<UnoCard> getCardsCurrentPlayer() {
-        return cards;
+        return null;
     }
 
     @Override
     public ArrayList<Player> getPlayers() {
-        ArrayList<Player> listPlayers= new ArrayList<>();
-        listPlayers.add(new Player("Jugador 1"));
-        listPlayers.add(new Player("Jugador 2"));
-        listPlayers.add(new Player("Jugador 3"));
-        listPlayers.add(new Player("Jugador 4"));
-
-        return listPlayers;
+        return null;
     }
 
     @Override
     public UnoCard getCurrentCard() {
-        return new Card(Color.GREEN,9);
+        return null;
     }
 
     @Override
     public Player getCurrentTurn() {
-        return new Player("Jugador 2");
+        return null;
     }
 
     @Override
@@ -51,7 +40,7 @@ public class Game implements UnoGame {
 
     @Override
     public void loadCard() {
-        cards.add(new Card(Color.RED,9));
+        
     }
 
     @Override

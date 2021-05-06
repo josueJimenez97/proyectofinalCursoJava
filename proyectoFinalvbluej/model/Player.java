@@ -14,11 +14,6 @@ public class Player{
     }
     @Override
     public boolean equals(Object o){
-        boolean res=false;
-        if(o instanceof Player){
-            Player p= (Player)o;
-            res= p.getName().equals(name);
-        }
-        return res;
+        return false;
     }
 }
