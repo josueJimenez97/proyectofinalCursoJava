@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=MainPanel
+comment1.params=game
+comment1.target=MainPanel(model.UnoGame)
+comment2.params=
+comment2.target=void\ addPlayersPanel()
+comment3.params=
+comment3.target=void\ changeTurn()
+comment4.params=
+comment4.target=void\ play()
+comment5.params=
+comment5.target=void\ loadingCard()
+comment6.params=card
+comment6.target=void\ cardClick(model.UnoCard)
+comment7.params=card
+comment7.target=void\ dropCard(model.UnoCard)
+comment8.params=
+comment8.target=void\ nextPlayer()
+comment9.params=
+comment9.target=void\ update()
+numComments=10

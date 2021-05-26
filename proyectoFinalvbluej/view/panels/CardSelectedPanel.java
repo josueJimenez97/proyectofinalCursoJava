@@ -13,7 +13,8 @@ public class CardSelectedPanel extends JPanel {
     private JLabel lblMsg, lblCard;
     private UnoCard card;
     private MainPanel mainPanel;
-
+    private JButton btnDrop;
+    private BtnDropListener listener;
     public CardSelectedPanel(UnoCard card, MainPanel mainPanel) {
         this.card = card;
         this.mainPanel = mainPanel;
@@ -43,11 +44,12 @@ public class CardSelectedPanel extends JPanel {
         aux2.setBorderPainted(false);
         add(aux, BorderLayout.WEST);
         add(aux2, BorderLayout.EAST);
-        JButton btnDrop = new JButton("Soltar");
+        btnDrop = new JButton("Soltar");
         btnDrop.setForeground(Color.white);
         btnDrop.setBackground(new Color(109, 20, 60));
-        btnDrop.addActionListener(new BtnDropListener(card, mainPanel));
-
+        listener=  new BtnDropListener(this.card, mainPanel);
+        btnDrop.addActionListener(listener);
+        
         JButton btnNext = new JButton("Paso");
         btnNext.setForeground(Color.white);
         btnNext.setBackground(new Color(109, 20, 60));
@@ -61,6 +63,7 @@ public class CardSelectedPanel extends JPanel {
 
     public void refresh(UnoCard card) {
         this.card= card;
+        listener.setCard(card);
         if(card.getColor()==Color.RED||card.getColor()==Color.BLUE||card.getColor()==Color.BLACK){
             lblCard.setForeground(new Color(232,242,239));
         }else{

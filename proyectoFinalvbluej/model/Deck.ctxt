@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Deck
+comment1.params=
+comment1.target=Deck()
+comment2.params=card
+comment2.target=void\ insertCards(Card)
+comment3.params=
+comment3.target=java.util.ArrayList\ getDeck()
+comment4.params=
+comment4.target=java.util.ArrayList\ entregarCartas()
+numComments=5

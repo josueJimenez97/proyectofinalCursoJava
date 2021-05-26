@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=DeckPanel
+comment1.params=game\ mainPanel
+comment1.target=DeckPanel(model.UnoGame,\ view.MainPanel)
+numComments=2

@@ -100,10 +100,18 @@ public class MainPanel extends JPanel {
         cardSelectedPanel.refresh(card);
     }
     public void dropCard(UnoCard card){
+        System.out.println("llamando a drop");
         if(!game.dropCard(card)){
             JOptionPane.showMessageDialog(null,"Selecciona una carta: del mismo color o mismo numero");
         }else{
-            nextPlayer();
+            //game.nextTurn();
+            
+            if(game.whoWin()!=null){
+                System.out.println("hay ganador");
+                JOptionPane.showMessageDialog(null,"El ganador es: "+game.whoWin());
+            }else{
+                update();
+            }
         }
     }
     public void nextPlayer(){

@@ -14,6 +14,9 @@ public class BtnDropListener implements ActionListener {
         this.card= card;
         this.mainPanel= mainPanel;
     }
+    public void setCard(UnoCard newCard){
+        card= newCard;
+    }
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("dropp");

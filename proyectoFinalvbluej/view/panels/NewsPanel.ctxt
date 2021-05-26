@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=NewsPanel
+comment1.params=game\ mainPanel
+comment1.target=NewsPanel(model.UnoGame,\ view.MainPanel)
+comment2.params=
+comment2.target=void\ initComponents()
+comment3.params=
+comment3.target=void\ refresh()
+numComments=4
